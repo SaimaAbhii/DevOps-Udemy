@@ -1,0 +1,1 @@
+{"virtualbox":{"/opt/scripts":{"guestpath":"/opt/scripts","hostpath":"/home/abhiram.as@bridge-delivery.com/Desktop/DevOps/DevOps-Udemy/VagrantVMs/myVMs/scripts","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/home/abhiram.as@bridge-delivery.com/Desktop/DevOps/DevOps-Udemy/VagrantVMs/myVMs","disabled":false,"__vagrantfile":true}}}
