@@ -32,7 +32,7 @@ Vagrant.configure("2") do |config|
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
-   config.vm.network "private_network", ip: "192.168.56.17"
+   config.vm.network "private_network", ip: "192.168.56.10"
 
   # Create a public network, which generally matched to bridged network.
   # Bridged networks make the machine appear as another physical device on
@@ -63,8 +63,7 @@ Vagrant.configure("2") do |config|
   #   # Customize the amount of memory on the VM:
      vb.memory = "1024"
      vb.cpus = 2
-  
-    end
+   end
   #
   # View the documentation for the provider you are using for more
   # information on available options.
@@ -72,10 +71,12 @@ Vagrant.configure("2") do |config|
   # Enable provisioning with a shell script. Additional provisioners such as
   # Ansible, Chef, Docker, Puppet and Salt are also available. Please see the
   # documentation for more information about their specific syntax and use.
-   config.vm.provision "shell", inline: <<-SHELL
-     yum install -y httpd wget unzip git
-     mkdir -p /opt/devopsdir
-     free -m > /opt/devopsdir/memory.txt
-     df -h > /opt/devopsdir/disk.txt
-   SHELL
+  config.vm.provision "shell", inline: <<-SHELL
+    #   apt-get update
+    #   apt-get install -y apache2
+    sudo dnf update -y
+    mkdir -p /opt/devopsdir
+    free -m > /opt/devopsdir/memory.txt
+    df -h > /opt/devopsdir/disk.txt
+  SHELL
 end

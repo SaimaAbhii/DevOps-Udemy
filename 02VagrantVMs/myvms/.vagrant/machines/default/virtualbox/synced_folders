@@ -1,0 +1,1 @@
+{"virtualbox":{"/opt/data":{"guestpath":"/opt/data","hostpath":"/home/abhiram.as@bridge-delivery.com/Desktop/DevOps/DevOps-Udemy/02VagrantVMs/myvms/data","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/home/abhiram.as@bridge-delivery.com/Desktop/DevOps/DevOps-Udemy/02VagrantVMs/myvms","disabled":false,"__vagrantfile":true}}}
